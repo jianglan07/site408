@@ -1,0 +1,25 @@
+
+ 
+1. Opening a Web Page (JavaScript)
+- Syntax:  let page = window.open(url, targetWindow, ways) 
+-  ways : Refers to the geometric properties and styles of the opened window.
+2. Task - related
+- Task 2 will not start until Task 1 is completed (for synchronous communication).
+- There is a small timeout setting, a few seconds.
+3. XMLHttpRequest Object
+- Creating the object:  xmlhttp = new XMLHttpRequest(); 
+- State change listening function:
+xmlhttp.onreadystatechange = function() {
+  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    var y = xmlhttp.responseText;
+  }
+}
+xmlhttp.send(url);
+ 
+4. Types of Communication
+- Synchronous Communication: Both parties in the communication need to be present at the same time, such as telephone calls, live broadcasts.
+- Asynchronous Communication: Both parties do not need to be present at the same time, such as regular letters, emails, leaving messages.
+5. Website - related (Content on the Blackboard)
+-  https://account.pythonanywhere.com/codes 
+- Related paths:  /signin ,  /verify ,  /attended 
+- Operations related to verification codes may be involved (words like  code ,  v code ,  diff - sid , etc.).
